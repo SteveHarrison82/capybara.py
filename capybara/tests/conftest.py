@@ -47,7 +47,7 @@ def setup_capybara():
 def session(driver):
     from capybara.session import Session
 
-    return Session(driver, app)
+    return Session(driver.name, app)
 
 
 @pytest.fixture(scope="session")

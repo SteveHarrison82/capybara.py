@@ -240,3 +240,10 @@ def init_selenium_driver(app):
     from capybara.selenium.driver import Driver
 
     return Driver(app)
+
+
+@register_driver("werkzeug")
+def init_werkzeug_driver(app):
+    from capybara.werkzeug.driver import Driver
+
+    return Driver(app)
